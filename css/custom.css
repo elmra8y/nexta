@@ -1,0 +1,9 @@
+section.home-wallpaper-overlay {
+    position: relative;
+    background:
+            linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Gradient overlay */
+            url('../img/home/programming-backgroundr.jpg');  !important;/* Original background */
+    background-size: cover; /* Adjust the image size */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
