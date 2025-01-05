@@ -11,7 +11,8 @@
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{asset('/assets/')}}/img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{{asset('/assets/')}}/img/demos/digital-agency-2/logos/NEXTA%20LOGO.png"
+          type="image/x-icon"/>
     <link rel="apple-touch-icon" href="{{asset('/assets/')}}/img/apple-touch-icon.png">
 
     <!-- Mobile Metas -->
@@ -46,4 +47,8 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{asset('/assets/')}}/css/custom.css">
 
+    <!-- Lang CSS -->
+    @if(app()->getLocale() == 'ar')
+        <link rel="stylesheet" href="{{asset('/assets/')}}/css/rtl.css">
+    @endif
 </head>

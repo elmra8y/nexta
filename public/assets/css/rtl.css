@@ -1,0 +1,51 @@
+/* Setting the entire UI to RTL (Right-To-Left) orientation */
+html {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+body, a {
+    text-align: right !important;
+}
+
+/* Adjusting specific elements commonly affected by RTL */
+button, input, textarea {
+    direction: rtl;
+    text-align: right;
+}
+
+ul, ol {
+    padding-right: 20px; /* Adjust padding for lists */
+}
+
+table {
+    direction: rtl;
+    text-align: right;
+}
+
+thead th:first-child,
+tbody td:first-child {
+    text-align: right;
+}
+
+section.home-wallpaper-overlay {
+    position: relative;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Gradient overlay */ url('../img/home/cover.jpeg') no-repeat center center / cover !important; /* Background image */
+    z-index: 1; /* Ensure it's above other elements if necessary */
+    min-height: 100vh; /* Optional: Ensures the section takes up full viewport height */
+}
+
+.me-1 {
+    margin-left: .25rem !important;
+    margin-right: 0 !important;
+}
+
+.custom-btn-with-arrow:after {
+    /*content: ''; todo*/
+    margin-left: 0;
+    margin-right: 17px;
+}
+
+.about-us-featured-block {
+    transform: translate(70px, -50%) !important;
+}

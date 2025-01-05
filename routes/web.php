@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\SerivesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,14 +31,24 @@ Route::get('/our-services', function () {
     return view('our-services');
 })->name('our-services');
 
-Route::get('/our-services/{type}', function () {
-    return view('our-services-details');
-})->name('our-services-details');
+Route::get('/our-services/{type}', [SerivesController::class, 'show'])->name('our-services-details');
 
 Route::get('/our-work', function () {
     return view('our-work');
 })->name('our-work');
 
-Route::get('/our-work/{type}', function () {
-    return view('our-work-details');
-})->name('our-work-details');
+Route::get('/our-work/{type}', [ProjectsController::class, 'show'])->name('our-work-details');
+
+Route::get('/change-language', function () {
+    // Check the current application locale and toggle between 'en' and 'ar'
+    $lang = app()->getLocale() === 'en' ? 'ar' : 'en';
+
+    // Store the new locale in the session
+    session(['locale' => $lang]);
+
+    // Set the application locale for the current request
+    app()->setLocale($lang);
+
+    // Redirect back to the previous page
+    return redirect()->back();
+})->name('change-language');

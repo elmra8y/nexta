@@ -6,23 +6,23 @@
 }
 /* Skin Colors */
 :root {
-	--primary: #e41645;
-	--primary-100: #cd143e;
-	--primary-200: #c1133a;
-	--primary-300: #b51237;
-	--primary--100: #ea2955;
-	--primary--200: #eb355e;
-	--primary--300: #ed4068;
+	--primary: #f38209;
+	--primary-100: #f5a623; /* لون أفتح بقليل */
+	--primary-200: #f6ba46; /* لون أفتح */
+	--primary-300: #f7cf69; /* لون فاتح بشكل ملحوظ */
+	--primary--100: #e07607; /* لون أغمق قليلاً */
+	--primary--200: #cc6a06; /* لون أغمق */
+	--primary--300: #b65e05; /* لون أغمق بشكل ملحوظ */
 	--primary-rgba-0: rgba(228, 22, 69, 0);
-	--primary-rgba-10: rgba(228, 22, 69, 0.1);
-	--primary-rgba-20: rgba(228, 22, 69, 0.2);
-	--primary-rgba-30: rgba(228, 22, 69, 0.3);
-	--primary-rgba-40: rgba(228, 22, 69, 0.4);
-	--primary-rgba-50: rgba(228, 22, 69, 0.5);
-	--primary-rgba-60: rgba(228, 22, 69, 0.6);
-	--primary-rgba-70: rgba(228, 22, 69, 0.7);
-	--primary-rgba-80: rgba(228, 22, 69, 0.8);
-	--primary-rgba-90: rgba(228, 22, 69, 0.9);
+	--primary-rgba-10: rgba(243, 130, 9, 0.1); /* أصفر برتقالي بنسبة شفافية 10% */
+	--primary-rgba-20: rgba(243, 130, 9, 0.2); /* أصفر برتقالي بنسبة شفافية 20% */
+	--primary-rgba-30: rgba(243, 130, 9, 0.3); /* أصفر برتقالي بنسبة شفافية 30% */
+	--primary-rgba-40: rgba(243, 130, 9, 0.4); /* أصفر برتقالي بنسبة شفافية 40% */
+	--primary-rgba-50: rgba(243, 130, 9, 0.5); /* أصفر برتقالي بنسبة شفافية 50% */
+	--primary-rgba-60: rgba(243, 130, 9, 0.6); /* أصفر برتقالي بنسبة شفافية 60% */
+	--primary-rgba-70: rgba(243, 130, 9, 0.7); /* أصفر برتقالي بنسبة شفافية 70% */
+	--primary-rgba-80: rgba(243, 130, 9, 0.8); /* أصفر برتقالي بنسبة شفافية 80% */
+	--primary-rgba-90: rgba(243, 130, 9, 0.9); /* أصفر برتقالي بنسبة شفافية 90% */
 	--secondary: #292929;
 	--secondary-100: #1c1c1c;
 	--secondary-200: #161616;

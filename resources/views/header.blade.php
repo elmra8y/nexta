@@ -23,91 +23,125 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown-primary">
-                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3 active"
+                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3 {{ request()->routeIs('home') ? 'active' : '' }}"
                                                href="{{ route('home') }}">
-                                                Home
+                                                {{ __('Home') }}
                                             </a>
                                         </li>
                                         <li class="dropdown-primary">
-                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3"
+                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3 {{ request()->routeIs('about-us') ? 'active' : '' }}"
                                                href="{{ route('about-us') }}">
-                                                About Us
+                                                {{ __('About Us') }}
                                             </a>
                                         </li>
+
                                         <li class="dropdown">
-                                            <a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3"
+                                            <a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3 {{ request()->routeIs('our-services*') ? 'active' : '' }}"
                                                href="{{ route('our-services') }}">
-                                                Our Services
+                                                {{ __('Our Services') }}
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        UX Design
+                                                       href="{{route('our-services-details', ['type' => 'ux'])}}">
+                                                        {{ __('UX Design') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Web Development
+                                                       href="{{route('our-services-details', ['type' => 'web-development'])}}">
+                                                        {{ __('Web Development') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        B2B Software
+                                                       href="{{route('our-services-details', ['type' => 'b2b-software'])}}">
+                                                        {{ __('B2B Software') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Content Marketing
+                                                       href="{{route('our-services-details', ['type' => 'content-marketing'])}}">
+                                                        {{ __('Content Marketing') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Email Marketing
+                                                       href="{{route('our-services-details', ['type' => 'email-marketing'])}}">
+                                                        {{ __('Email Marketing') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Search Engine Optimize
+                                                       href="{{route('our-services-details', ['type' => 'seo'])}}">
+                                                        {{ __('Search Engine Optimize') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Social Media Ads
+                                                       href="{{route('our-services-details', ['type' => 'social-media-ads'])}}">
+                                                        {{ __('Social Media Ads') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Brand and Identity
+                                                       href="{{route('our-services-details', ['type' => 'brand-identity'])}}">
+                                                        {{ __('Brand and Identity') }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item font-weight-normal"
-                                                       href="{{route('our-services-details', ['type' => 1])}}">
-                                                        Content Strategy
+                                                       href="{{route('our-services-details', ['type' => 'content-strategy'])}}">
+                                                        {{ __('Content Strategy') }}
                                                     </a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-primary">
-                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3"
+                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3 {{ request()->routeIs('our-work') ? 'active' : '' }}"
                                                href="{{ route('our-work') }}">
-                                                Our Work
+                                                {{ __('Our Work') }}
                                             </a>
                                         </li>
 
                                         <li class="dropdown-primary">
-                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3"
+                                            <a class="nav-link text-capitalize font-weight-semibold custom-text-3 {{ request()->routeIs('contact-us') ? 'active' : '' }}"
                                                href="{{ route('contact-us') }}">
-                                                Contact Us
+                                                {{ __('Contact Us') }}
                                             </a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3"
+                                               href="#"
+                                               id="languageDropdown"
+                                               role="button"
+                                               data-bs-toggle="dropdown"
+                                               aria-expanded="false">
+                                                @if(app()->getLocale() == 'en')
+                                                    <img src="{{asset('assets/img/shared/Flag_of_the_United_States.svg')}}"
+                                                         alt="English" width="20" class="me-1"> {{ __('EN') }}
+                                                @else
+                                                    <img src="{{asset('assets/img/shared/Flag_of_Saudi_Arabia.svg')}}"
+                                                         alt="Arabic" width="20" class="me-1"> {{ __('AR') }}
+                                                @endif
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                                <li>
+                                                    <a class="dropdown-item"
+                                                       href="{{ route('change-language', ['locale' => 'en']) }}">
+                                                        <img src="{{asset('assets/img/shared/Flag_of_the_United_States.svg')}}"
+                                                             alt="English" width="20" class="me-1"> {{ __('EN') }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item"
+                                                       href="{{ route('change-language', ['locale' => 'ar']) }}">
+                                                        <img src="{{asset('assets/img/shared/Flag_of_Saudi_Arabia.svg')}}"
+                                                             alt="Arabic" width="20" class="me-1"> {{ __('AR') }}
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </nav>
@@ -117,21 +151,6 @@
                                 <i class="fas fa-bars"></i>
                             </button>
                         </div>
-                    </div>
-                </div>
-                <div class="header-column justify-content-end d-none d-lg-flex">
-                    <div class="header-row">
-                        <ul class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-big d-lg-flex m-0 ms-lg-2">
-                            <li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank"
-                                                                  class="text-4" title="Instagram"><i
-                                            class="fab fa-instagram"></i></a></li>
-                            <li class="social-icons-x"><a href="http://www.twitter.com/" target="_blank"
-                                                          class="text-4" title="Twitter"><i
-                                            class="fab fa-x-twitter"></i></a></li>
-                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
-                                                                 class="text-4" title="Facebook"><i
-                                            class="fab fa-facebook-f"></i></a></li>
-                        </ul>
                     </div>
                 </div>
             </div>

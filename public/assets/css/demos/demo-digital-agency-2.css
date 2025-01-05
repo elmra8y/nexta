@@ -212,7 +212,7 @@ body {
 
 @media (min-width: 992px) {
 		#header.header-effect-shrink .header-container .header-nav nav ul li.dropdown:hover .dropdown-menu {
-				margin-top: -20px !important;
+				margin-top: -45px !important;
 		}
 }
 
