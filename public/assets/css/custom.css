@@ -1,8 +1,26 @@
 section.home-wallpaper-overlay {
     position: relative;
-    background:
-            linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Gradient overlay */
-            url('../img/home/cover.jpeg') no-repeat center center / cover; /* Background image */
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Gradient overlay */ url('../img/home/cover.jpeg') no-repeat center center / cover; /* Background image */
     z-index: 1; /* Ensure it's above other elements if necessary */
     min-height: 100vh; /* Optional: Ensures the section takes up full viewport height */
+}
+
+.projects-images-wrapper img {
+    object-fit: cover;
+}
+
+.projects-images-wrapper .img-1 {
+    width: 388px;
+    height: 388px;
+}
+
+.projects-images-wrapper .img-2 {
+    width: 800px;
+    height: 600px;
+}
+
+.our-work .custom-our-work img {
+    min-height: 280px;
+    max-height: 300px;
+    object-fit: cover;
 }
