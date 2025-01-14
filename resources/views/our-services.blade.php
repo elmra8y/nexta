@@ -13,10 +13,10 @@
             <div class="row mt-5">
                 <div class="col">
                     <ul class="breadcrumb breadcrumb-light custom-title-with-icon-primary d-block">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Our Services</li>
+                        <li><a href="#">{{ __('Home') }}</a></li>
+                        <li class="active">{{ __('Our Services') }}</li>
                     </ul>
-                    <h1 class="custom-text-10 font-weight-bold">Our Services</h1>
+                    <h1 class="custom-text-10 font-weight-bold">{{ __('Our Services') }} </h1>
                 </div>
             </div>
         </div>
@@ -55,35 +55,36 @@
     </div>
 
     <section class="our-services p-relative pt-0 pb-5 mb-4">
-        <span class="custom-circle custom-circle-2 bg-color-quaternary appear-animation" data-appear-animation="zoomIn"
-              data-appear-animation-delay="100"></span>
+            <span class="custom-circle custom-circle-2 bg-color-quaternary appear-animation"
+                  data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
         <div class="container">
             <div class="row justify-content-center">
                 <h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation"
-                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">We Can Help You With:</h4>
+                    data-appear-animation="fadeInUpShorter"
+                    data-appear-animation-delay="200">{{ __('We Can Help You With:') }}</h4>
             </div>
             <div class="row">
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="200">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-                            UX Design
+                            {{ __('UX Design') }}
                         </div>
                     </a>
                 </div>
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="300">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-                            Web Development
+                            {{ __('Web Development') }}
                         </div>
                     </a>
                 </div>
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="400">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-                            B2B Software
+                            {{ __('B2B Software') }}
                         </div>
                     </a>
                 </div>
@@ -91,25 +92,25 @@
             <div class="row">
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="500">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-                            Content Marketing
+                            {{ __('Content Marketing') }}
                         </div>
                     </a>
                 </div>
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="600">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-                            Email Marketing
+                            {{ __('Email Marketing') }}
                         </div>
                     </a>
                 </div>
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="700">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-                            Search Engine Optimize
+                            {{ __('Search Engine Optimize') }}
                         </div>
                     </a>
                 </div>
@@ -117,25 +118,25 @@
             <div class="row">
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="800">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-                            Social Media Ads
+                            {{ __('Social Media Ads') }}
                         </div>
                     </a>
                 </div>
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="900">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-                            Brand and Identity
+                            {{ __('Brand and Identity') }}
                         </div>
                     </a>
                 </div>
                 <div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter"
                      data-appear-animation-delay="1000">
-                    <a href="{{ route('our-work', ['type' => 1])  }}" class="text-decoration-none">
+                    <a href="{{ route('our-services-details', ['type' => 1])  }}" class="text-decoration-none">
                         <div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-                            Content Strategy
+                            {{ __('Content Strategy') }}
                         </div>
                     </a>
                 </div>
@@ -144,7 +145,7 @@
                 <div class="col-xl-9">
                     <p class="custom-text-4 mt-4 mb-0 text-center appear-animation"
                        data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                        {{__('we_can_help_you_with_1')}}
+                        {{ __('At Nexta, our goal is to provide comprehensive, reliable support tailored to your unique business needs. We’re more than just a service provider; we’re a partner invested in your success. From the initial planning stages through to implementation and ongoing maintenance, we ensure each solution is crafted with precision and scalability in mind. Our experienced team leverages the latest technologies and best practices to help you stay competitive, grow your brand, and achieve long-term results. Trust us to deliver solutions that drive innovation and empower your business to thrive in today’s digital landscape.') }}
                     </p>
                 </div>
             </div>
@@ -155,8 +156,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Clients</h4>
+                    <h4 class="text-color23-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                        {{__('our_clients')}}
+                    </h4>
                 </div>
             </div>
             <div class="row flex-row align-items-center justify-content-center mb-lg-5">
@@ -198,24 +201,4 @@
         </div>
     </section>
 
-    <section
-            class="get-in-touch bg-color-after-secondary overlay overlay-color-primary overlay-show p-relative overflow-hidden"
-            style="background-image: url('{{asset('/assets/')}}/img/demos/digital-agency-2/bg/bg-2.jpg'); background-size: cover; background-position: center;">
-        <span class="custom-circle custom-circle-1 bg-color-light appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-        <span class="custom-circle custom-circle-2 bg-color-light appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p class="mb-2 text-color-tertiary custom-text-7 custom-title-with-icon custom-title-with-icon-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Let’s Get in Touch</p>
-                    <h4 class="text-color-light font-weight-bold custom-text-10 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                        We’re interested in talking<br/>
-                        about your business.
-                    </h4>
-                </div>
-                <div class="col-lg-4 d-flex align-items-center justify-content-start justify-content-lg-end mt-5 mt-lg-0">
-                    <a herf="#" class="btn btn-outline custom-btn-outline btn-light border-white rounded-0 px-4 py-3 text-color-light text-color-hover-dark bg-color-hover-light custom-text-6 line-height-6 font-weight-semibold custom-btn-with-arrow appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Let’s Talk!</a>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection

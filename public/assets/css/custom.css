@@ -7,6 +7,7 @@ section.home-wallpaper-overlay {
 
 .projects-images-wrapper img {
     object-fit: cover;
+    max-width: 100% !important;
 }
 
 .projects-images-wrapper .img-1 {

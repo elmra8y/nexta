@@ -49,6 +49,7 @@
 
     <!-- Lang CSS -->
     @if(app()->getLocale() == 'ar')
+        <link rel="stylesheet" href="{{asset('/assets/')}}/css/rtl-fonts.css">
         <link rel="stylesheet" href="{{asset('/assets/')}}/css/rtl.css">
     @endif
 </head>

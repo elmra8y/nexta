@@ -6,6 +6,9 @@ html {
 
 body, a {
     text-align: right !important;
+    direction: rtl;
+    unicode-bidi: embed;
+    font-family: 'Almarai', sans-serif;
 }
 
 /* Adjusting specific elements commonly affected by RTL */
@@ -35,6 +38,10 @@ section.home-wallpaper-overlay {
     min-height: 100vh; /* Optional: Ensures the section takes up full viewport height */
 }
 
+.page-header{
+    text-align: right;
+}
+
 .me-1 {
     margin-left: .25rem !important;
     margin-right: 0 !important;
@@ -48,4 +55,18 @@ section.home-wallpaper-overlay {
 
 .about-us-featured-block {
     transform: translate(70px, -50%) !important;
+}
+
+.custom-text-10 {
+    line-height: 1.5 !important;
+}
+
+.custom-btn-with-arrow:after {
+    display: none !important;
+}
+
+
+
+.breadcrumb > li + li:before {
+    content: "\f104";
 }
